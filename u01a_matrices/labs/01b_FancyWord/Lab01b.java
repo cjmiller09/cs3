@@ -4,9 +4,11 @@
 //Class -
 //Lab  -
 
-import static java.lang.System.*;
+// Only works in JGRASP
+
 import java.io.File;
 import java.io.IOException;
+import static java.lang.System.*;
 import java.util.Scanner;
 
 public class Lab01b

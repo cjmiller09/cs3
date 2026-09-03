@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //ListIterator example
@@ -90,3 +90,4 @@ nextIndex: 0	previousIndex: -1	hasPrevious(): false		set & remove would change i
 
 
 */
+

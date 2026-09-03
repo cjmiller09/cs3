@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,6 +13,15 @@ public class Lab01b
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//add code and test cases here
+		File data = new File("lab01b.dat");
+      Scanner scan = new Scanner(data);
+      int size = scan.nextInt();
+      scan.nextLine();
+      FancyWord word = new FancyWord();
+      for(int i=0; i<size; i++){
+         word = new FancyWord(scan.nextLine());
+         out.println(word);
+      }
 	}
 }
+

@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //new for loop example two
@@ -28,3 +28,4 @@ public class NewForTwo
       out.println("\n"+list);
 	}
 }
+

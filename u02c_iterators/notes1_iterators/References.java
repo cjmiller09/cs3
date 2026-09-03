@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //references example
@@ -50,3 +50,5 @@ public class References
 		out.println(y);
 	}
 }
+
+

@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Iterator hasNext example
@@ -26,3 +26,5 @@ public class HasNext
 		}
 	}
 }
+
+

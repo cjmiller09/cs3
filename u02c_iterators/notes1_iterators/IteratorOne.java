@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Iterator next example
@@ -23,3 +23,4 @@ public class IteratorOne
       words.remove(1);
 	}
 }
+

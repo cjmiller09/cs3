@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //list iterator set example 1
@@ -28,3 +28,5 @@ public class SetOne
 		System.out.println(it.previous());
 	}
 }
+
+

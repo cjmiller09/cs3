@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //new for loop example one
@@ -25,3 +25,4 @@ public class NewForOne
 		}
 	}
 }
+

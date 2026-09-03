@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Iterator next example
@@ -28,3 +28,5 @@ public class NextOne
 													//throws a no-such element exception
 	}
 }
+
+

@@ -14,3 +14,4 @@ public class ArrayListSplit
 		System.out.println(list);
 	}
 }
+

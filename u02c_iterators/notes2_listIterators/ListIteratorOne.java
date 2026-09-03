@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //ListIterator example
@@ -25,3 +25,4 @@ public class ListIteratorOne
 		System.out.println(it.next());
 	}
 }
+

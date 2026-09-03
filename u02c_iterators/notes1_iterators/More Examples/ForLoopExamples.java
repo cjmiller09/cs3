@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Lab  -
@@ -91,4 +91,6 @@ System.out.println("There are "+ i + " characters.");
 
      }
 }
+
+
 

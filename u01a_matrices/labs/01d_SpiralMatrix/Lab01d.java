@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,6 +10,8 @@ public class Lab01d
 {
 	public static void main( String args[] )
 	{
-		//add code and test cases here
+		SpiralMatrix test = new SpiralMatrix(5);
+      out.println(test);
 	}
 }
+

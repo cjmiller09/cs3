@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Iterator remove example
@@ -24,3 +24,5 @@ public class RemoveTwo
 		it.remove();
 	}
 }
+
+

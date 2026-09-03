@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //Matrix instance variables example
@@ -46,3 +46,4 @@ public class MatrixInstanceVars
 		System.out.println(theMat);	   	
 	}
 }
+

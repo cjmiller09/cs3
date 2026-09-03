@@ -38,3 +38,5 @@ public class UnitCirclePoint implements Comparable<UnitCirclePoint> {
              ", tangent = " + String.format("%10s", tangentName);
    }
 }
+
+

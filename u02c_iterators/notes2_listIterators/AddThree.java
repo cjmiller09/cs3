@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //list iterator add example 2
@@ -29,3 +29,4 @@ public class AddThree
 		System.out.println(words);
 	}
 }
+

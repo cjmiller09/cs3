@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,36 +10,37 @@ public class Number
 
 	public Number()
 	{
-
-
+      this(0);
 	}
 
 	public Number(int num)
 	{
-
-
+      setNumber(num);
 	}
 	
 	public void setNumber(int num)
 	{
-
-
+      number = num;
 	}
 	
 	public int getNumber()
 	{
-		return 0;
+		return number;
 	}	
 	
 	public boolean isOdd()
 	{
-		return false;
+		return number % 2 == 1;
 	}
 	
 	public boolean isPerfect()
 	{
 		int total=0;
-
+      for(int i=1; i<number; i++){
+         if(number % i == 0){
+            total += i;
+         }
+      }
 
 
 
@@ -48,6 +49,6 @@ public class Number
 	
 	public String toString( )
 	{
-		return "";
+		return getNumber() + "";
 	}
 }

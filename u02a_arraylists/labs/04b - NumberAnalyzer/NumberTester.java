@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,18 +10,10 @@ public class NumberTester
 {
 	public static void main(String[] args)
 	{
-		//add test cases
-		
-		
-		
-		
-		
-		//add more test cases
-		
-		
-		
-		
-		
+		Number test = new Number(496);
+		out.println(test.getNumber());
+		out.println(test.isOdd());
+		out.println(test.isPerfect());
 		
 	}
 }

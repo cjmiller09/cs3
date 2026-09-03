@@ -1,4 +1,4 @@
-//� A+ Computer Science
+//Â© A+ Computer Science
 // www.apluscompsci.com
 
 //list iterator add example 1
@@ -27,3 +27,4 @@ public class AddOne
 		System.out.println(words);
 	}
 }
+

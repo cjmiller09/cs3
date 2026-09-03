@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -14,50 +14,61 @@ public class NumberAnalyzer
 
 	public NumberAnalyzer()
 	{
-
+		this("");
 	}
 
 	public NumberAnalyzer(String numbers)
 	{
-
+		setList(numbers);
 	}
 	
 	public void setList(String numbers)
 	{
-
-
-	
+		list = new ArrayList<Number>();
+	  	Scanner scan = new Scanner(numbers);
+	  	while(scan.hasNextInt()){
+			list.add(new Number(scan.nextInt()));
+	  	}
 	}
 
 	public int countOdds()
 	{
       int oddCount=0;
-
-
+		for(Number n : list){
+		 if(n.isOdd()){
+			oddCount++;
+		 }
+	  }
 
       return oddCount;
 	}
 
 	public int countEvens()
 	{
-      int evenCount=0;
-
-
-
-      return evenCount;
+    	int evenCount=0;
+		for(Number n : list){
+			if(!n.isOdd()){
+				evenCount++;
+			}
+		}
+	
+    	return evenCount;
 	}
 
 	public int countPerfects()
 	{
 		int perfectCount=0;
+		for(Number n : list){
+			if(n.isPerfect()){
+				perfectCount++;
+			}
+		}
 
-
-
-      return perfectCount;
+    	return perfectCount;
 	}
 	
 	public String toString( )
 	{
-		return "";
+		return list.toString();
 	}
 }

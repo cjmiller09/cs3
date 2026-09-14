@@ -9,6 +9,7 @@ import static java.lang.System.*;
 public class AtCounter
 {
    private char[][] atMat;
+   private int atCount;
 
 	public AtCounter() {
 		atMat = new char[][]{{'@','-','@','-','-','@','-','@','@','@'},
@@ -27,22 +28,16 @@ public class AtCounter
 
 		//add in recursive code to count up the # of @s connected
 		//start checking at spot [r,c]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		if(r>= 0 && r<atMat.length && c>=0 && c<atMat[0].length) {
+			if(atMat[r][c]=='@') {
+				atMat[r][c]='-';
+				atCount++;
+				countAts(r-1,c);
+				countAts(r+1,c);
+				countAts(r,c-1);
+				countAts(r,c+1);
+			}
+		}
 
 	}
 

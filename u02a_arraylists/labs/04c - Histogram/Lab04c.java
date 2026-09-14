@@ -11,7 +11,7 @@ public class Lab04c
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Histogram test = new Histogram(new char[]{'a','b','c'},"u02a_arraylists/labs/04c - Histogram/lab04c1.dat");
+		Histogram test = new Histogram(new char[]{'a','b','c'},"lab04c1.dat");
 		test.loadAndAnalyzeFile();
 		out.println("Letter occurring most : "+test.mostFrequent());
 		out.println("Letter occurring least : "+test.leastFrequent());
@@ -19,14 +19,14 @@ public class Lab04c
 		out.println(test);
 
 
-		test = new Histogram(new char[]{'d','e','a'},"u02a_arraylists/labs/04c - Histogram/lab04c2.dat");
+		test = new Histogram(new char[]{'d','e','a'},"lab04c2.dat");
 		test.loadAndAnalyzeFile();
 		out.println("Letter occurring most : "+test.mostFrequent());
 		out.println("Letter occurring least : "+test.leastFrequent());
 		out.println("\n");
 		out.println(test);
 
-		test = new Histogram(new char[]{'x','a','r','g'},"u02a_arraylists/labs/04c - Histogram/lab04c3.dat");
+		test = new Histogram(new char[]{'x','a','r','g'},"lab04c3.dat");
 		test.loadAndAnalyzeFile();
 		out.println("Letter occurring most : "+test.mostFrequent());
 		out.println("Letter occurring least : "+test.leastFrequent());

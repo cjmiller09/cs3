@@ -1,17 +1,16 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
 //Lab  -
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
-import static java.lang.System.*;
 
 public class Lab09c
 {
 	public static void main( String args[] ) throws IOException
 	{
+		Grid test = new Grid(4,4,new String[]{"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"});
+		System.out.println(test);
 	}
 }

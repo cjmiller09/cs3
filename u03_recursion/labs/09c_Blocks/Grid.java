@@ -1,13 +1,8 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
 //Lab  -
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
-import static java.lang.System.*;
 
 public class Grid
 {
@@ -15,14 +10,24 @@ public class Grid
 
 	public Grid()
 	{
+		this(0,0,new String[0]);
 	}
 
 	public Grid(int rows, int cols, String[] vals)
 	{
+		setGrid(rows,cols,vals);
 	}
 	
 	public void setGrid(int rows, int cols, String[] vals)
 	{
+		grid = new String[rows][cols];
+		int i=0;
+		for(int r=0; r<grid.length; r++){
+			for(int c=0; c<grid[r].length; c++){
+				grid[r][c] = vals[i];
+				i++;
+			}
+		}
 	}
 
 	public int findMax(String val)
@@ -39,6 +44,12 @@ public class Grid
 	public String toString()
 	{
 		String output="";
+		for(String[] row : grid){
+			for(String col : row){
+				output += col + " ";
+			}
+			output += "\n";
+		}
 		return output;
 	}
 }

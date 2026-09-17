@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -21,7 +21,7 @@ public class CellTester
 		out.println(theShoe);	
 		
 		Cell bishop = new ColoredCell(200 ,200, 20, 20, true, Color.GREEN);
-		out.println(bishop);					
+		out.println(bishop);	
 	}
 }
 

@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -30,8 +30,9 @@ public class GarbageCollector extends JPanel implements MouseListener
 				int num = (int)(Math.random()*2);
 				if(num == 1)
 					trashMap.setSpot(r,c,new ColoredCell(r*rows+10, c*cols+10, 10, 10, true, Color.ORANGE));
-				//else
-					//load in a different Cell
+				else{
+					trashMap.setSpot(r,c,new ColoredCell(r*rows+10, c*cols+10, 10, 10, false, Color.ORANGE));
+				}
 			}
 		}
 
@@ -79,13 +80,17 @@ public class GarbageCollector extends JPanel implements MouseListener
 
 	public void pickUpTrash( int r, int c )
 	{
-	
-	
-	
-	
-	
-	
-	
+		if(r>=0 && r<trashMap.getNumRows() && c>=0 && c<trashMap.getNumCols())
+		{
+			ColoredCell cell = (ColoredCell)trashMap.getSpot(r,c);
+			if(cell != null && cell.getFilled()){
+				cell.setFilled(false);
+				pickUpTrash(r-1,c);
+				pickUpTrash(r+1,c);
+				pickUpTrash(r,c-1);
+				pickUpTrash(r,c+1);
+			}
+		}
 	}
 
 	public void mouseEntered(MouseEvent e) { }

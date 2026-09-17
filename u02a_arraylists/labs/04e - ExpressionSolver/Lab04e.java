@@ -4,14 +4,22 @@
 //Class -
 //Lab  -
 
-import java.util.ArrayList;
-import java.util.Scanner;
-import static java.lang.Integer.*;
+import java.io.File;
+import java.io.IOException;
 import static java.lang.System.*;
+import java.util.Scanner;
 
 public class Lab04e
 {
-	public static void main( String args[] )
+	public static void main( String args[] ) throws IOException
 	{
+		File file = new File("lab04e.dat");
+		Scanner scan = new Scanner(file);
+		ExpressionSolver solver;
+		while(scan.hasNextLine()){
+			solver = new ExpressionSolver(scan.nextLine());
+			solver.solveExpression();
+			out.println(solver);
+		}
 	}
 }

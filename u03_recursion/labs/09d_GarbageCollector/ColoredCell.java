@@ -5,8 +5,8 @@
 //Lab  -
 
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Font;
+import java.awt.Graphics;
 
 public class ColoredCell extends Cell
 {
@@ -73,9 +73,13 @@ public class ColoredCell extends Cell
 	public void draw(Graphics window)
 	{
 		window.setFont(new Font("TAHOMA",Font.BOLD,28));
+
 		window.setColor(getColor());
 		window.drawRect(getX(),getY(),getWidth(),getHeight());
-
+		if(getFilled()){
+			window.setColor(Color.GREEN);
+			window.fillRect(getX()+1,getY()+1,getWidth()-1,getHeight()-1);
+		}
 	}
 	
 	public String toString()

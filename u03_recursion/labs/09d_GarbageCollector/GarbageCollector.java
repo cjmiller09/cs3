@@ -4,11 +4,11 @@
 //Class -
 //Lab  - 
 
-import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.MouseListener;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.swing.JPanel;
 
 public class GarbageCollector extends JPanel implements MouseListener
@@ -69,19 +69,17 @@ public class GarbageCollector extends JPanel implements MouseListener
 
 	public void drawTrashMap( Graphics window  )
 	{
-		
-		
-		
-		
-		
-		
-		
+		for(int r=0; r<trashMap.getNumRows(); r++){
+			for(int c=0; c<trashMap.getNumCols(); c++){
+				ColoredCell cell = (ColoredCell)trashMap.getSpot(r,c);
+				cell.draw(window);
+			}
+		}
 	}
 
 	public void pickUpTrash( int r, int c )
 	{
-		if(r>=0 && r<trashMap.getNumRows() && c>=0 && c<trashMap.getNumCols())
-		{
+		if(r>=0 && r<trashMap.getNumRows() && c>=0 && c<trashMap.getNumCols()){
 			ColoredCell cell = (ColoredCell)trashMap.getSpot(r,c);
 			if(cell != null && cell.getFilled()){
 				cell.setFilled(false);

@@ -21,7 +21,16 @@ public class Person implements Comparable<Person>
 
   public int compareTo( Person other )
   {
-    return 0;
+    if(myYear != other.myYear){
+      return Integer.compare(other.myYear,myYear);
+    }
+    if(myMonth != other.myMonth){
+      return Integer.compare(other.myMonth,myMonth);
+    }
+    if(myDay != other.myDay){
+      return Integer.compare(other.myDay,myDay);
+    }
+    return myName.compareTo(other.myName);
   }
 
   public String toString( )
